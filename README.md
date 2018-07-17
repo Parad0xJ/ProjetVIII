@@ -7,11 +7,11 @@ En suivant ce lien vous trouverez l'intégralité du CDC du projet 7. [Cahier de
 #### Etape 1
 
 * Trouver les bugs.
-* Trouver les améliorations et optimisations possibles du code.
+* Trouver les améliorations et optimisations possibles dans le code.
 
 #### Etape 2
 
-* Faire des tests à l'aide de [Jasmine - Behavior Driven development](https://jasmine.github.io/ "Documentation officielle de Jasmine")
+* Faire des tests à l'aide de [Jasmine - Behavior Driven Javascript](https://jasmine.github.io/ "Documentation officielle de Jasmine")
 
 #### Etape 3
 
