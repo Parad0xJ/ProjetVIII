@@ -1,6 +1,6 @@
-## OpenClassRooms projet7 - Application todolistmvc
+## OpenClassRooms projet7 - Application todolist -
 
-En suivant ce lien vous trouverez l'intégralité du CDC du projet 7. [Cahier des charges du projet](https://github.com/Parad0xJ/todolistmvc/wiki "Projet 7 app. todolistmvc")
+En suivant ce lien vous trouverez l'intégralité du CDC du projet 7. [Cahier des charges du projet](https://github.com/Parad0xJ/todolistmvc/wiki "Projet 7 app. todolist")
 
 ### Les Grandes lignes du Projet
 
