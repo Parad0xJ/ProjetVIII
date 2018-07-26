@@ -1,6 +1,6 @@
 ## OpenClassRooms projet N° 8 - Application todolist -
 
-En suivant ce lien vous trouverez l'intégralité du CDC du projet N° 8. [Cahier des charges du projet](https://github.com/Parad0xJ/todolistmvc/wiki "Projet 7 app. todolist")
+En suivant ce lien vous trouverez l'intégralité du CDC du projet N° 8. [Cahier des charges du projet](https://github.com/Parad0xJ/todolistmvc/wiki "Projet 8 app. todolist")
 
 ### Les Grandes lignes du Projet
 
