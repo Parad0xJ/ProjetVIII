@@ -60,14 +60,6 @@ describe('controller', function () {
 
 	it('should show entries on start-up', function () {
 		// TODO: write test
-		var todoTest = {
-			id: '123',
-			title: 'myTodo',
-			completed: false
-		};
-		setUpModel([todoTest]);
-		subject.setView('');
-		expect(view.render).toHaveBeenCalledWith('showEntries', [todoTest]);
 	});
 
 	describe('routing', function () {
@@ -78,7 +70,7 @@ describe('controller', function () {
 			};
 			setUpModel([todo]);
 
-			subject.setView(''); //url 
+			subject.setView('');
 
 			expect(view.render).toHaveBeenCalledWith('showEntries', [todo]);
 		});
@@ -96,26 +88,10 @@ describe('controller', function () {
 
 		it('should show active entries', function () {
 			// TODO: write test
-			var todoTest = {
-				id: '123',
-				title: 'myTodo',
-				completed: false
-			};
-			setUpModel([todoTest]);
-			subject.setView('#/active');
-			expect(view.render).toHaveBeenCalledWith('showEntries', [todoTest]);
 		});
 
 		it('should show completed entries', function () {
 			// TODO: write test
-			var todoTest = {
-				id: '123',
-				title: 'myTodo',
-				completed: true
-			};
-			setUpModel([todoTest]);
-			subject.setView('#/completed');
-			expect(view.render).toHaveBeenCalledWith('showEntries', [todoTest]);
 		});
 	});
 
@@ -173,95 +149,25 @@ describe('controller', function () {
 
 	it('should highlight "All" filter by default', function () {
 		// TODO: write test
-		var todoTest = {
-			id: '123',
-			title: 'myTodo',
-			completed: true
-		};
-		setUpModel([todoTest]);
-		subject.setView('');
-		expect(view.render).toHaveBeenCalledWith('setFilter', '');
 	});
 
 	it('should highlight "Active" filter when switching to active view', function () {
-		// TODO: write test 
-		var todoTest = [{
-				id: '123',
-				title: 'myTodo',
-				completed: false
-			},
-			{
-				id: '456',
-				title: 'myTodo2',
-				completed: true
-			}
-		]
-		setUpModel([todoTest]);
-		subject.setView('#/active');
-		expect(view.render).toHaveBeenCalledWith('setFilter', 'active');
+		// TODO: write test
 	});
 
 	describe('toggle all', function () {
 		it('should toggle all todos to completed', function () {
-			// TODO: write test 
-			var todoTest = [{
-				id: 123,
-				title: 'myTodo',
-				completed: false
-			}, {
-				id: 456,
-				title: 'myTodo2',
-				completed: false
-			}]
-			setUpModel(todoTest);
-			subject.setView('');
-			view.trigger('toggleAll', {
-				completed: true
-			})
-			expect(model.update).toHaveBeenCalledWith(123, {
-				completed: true
-			}, jasmine.any(Function));
-			expect(model.update).toHaveBeenCalledWith(456, {
-				completed: true
-			}, jasmine.any(Function));
+			// TODO: write test
 		});
 
 		it('should update the view', function () {
 			// TODO: write test
-			var todoTest = [{
-				id: 123,
-				title: 'myTodo',
-				completed: false
-			}, {
-				id: 456,
-				title: 'myTodo2',
-				completed: false
-			}]
-			setUpModel(todoTest);
-			subject.setView('');
-			view.trigger('toggleAll', {
-				completed: true
-			});
-			expect(view.render).toHaveBeenCalledWith('elementComplete', {
-				id: 123,
-				completed: true
-			});
-			expect(view.render).toHaveBeenCalledWith('elementComplete', {
-				id: 456,
-				completed: true
-			});
 		});
 	});
 
 	describe('new todo', function () {
 		it('should add a new todo to the model', function () {
-			// TODO: write test 
-			setUpModel([]);
-			subject.setView('');
-
-			view.trigger('newTodo', 'myNewTodo');
-
-			expect(model.create).toHaveBeenCalledWith('myNewTodo', jasmine.any(Function));
+			// TODO: write test
 		});
 
 		it('should add a new todo to the view', function () {
@@ -302,19 +208,6 @@ describe('controller', function () {
 	describe('element removal', function () {
 		it('should remove an entry from the model', function () {
 			// TODO: write test
-			var todoTest = {
-				id: '123',
-				title: 'myTodo',
-				completed: false
-			};
-			setUpModel([todoTest]);
-			subject.setView('');
-
-			view.trigger('itemRemove', {
-				id: '123'
-			});
-
-			expect(model.remove).toHaveBeenCalledWith('123', jasmine.any(Function));
 		});
 
 		it('should remove an entry from the view', function () {
