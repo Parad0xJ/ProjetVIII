@@ -110,6 +110,15 @@ describe('controller', function () {
 
 		it('should show completed entries', function () {
 			// TODO: write test
+			var todoTest = {
+				id: '123',
+				title: 'myTodo',
+				completed: true
+			};
+			setUpModel([todoTest]);
+			subject.setView('#/completed');
+
+			expect(view.render).toHaveBeenCalledWith('showEntries', [todoTest]);
 		});
 	});
 
