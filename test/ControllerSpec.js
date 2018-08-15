@@ -234,6 +234,33 @@ describe('controller', function () {
 
 		it('should update the view', function () {
 			// TODO: write test
+			var todoTest = [{
+					id: 123,
+					title: 'myTodo',
+					completed: false
+				}, {
+					id: 456,
+					title: 'myTodo2',
+					completed: false
+				}
+
+			]
+			setUpModel(todoTest);
+			subject.setView('');
+
+			view.trigger('toggleAll', {
+				completed: true
+			});
+
+			expect(view.render).toHaveBeenCalledWith('elementComplete', {
+				id: 123,
+				completed: true
+			});
+
+			expect(view.render).toHaveBeenCalledWith('elementComplete', {
+				id: 456,
+				completed: true
+			});
 		});
 	});
 
