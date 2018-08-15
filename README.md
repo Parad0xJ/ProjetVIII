@@ -23,7 +23,7 @@
     - Comment elle fonctionne techniquement.
     - Audit.
     
-**Voir le Wiki**
+**Voir le [Wiki](https://github.com/Parad0xJ/ProjetVIII/wiki)**
 
 ***
 > Pour commencer il faut télécharger le projet initial [sur ce lien](https://s3-eu-west-1.amazonaws.com/static.oc-static.com/prod/courses/files/project-8-frontend/todo-list-project.zip "Attention lance le téléchargement"), vous pouvez aussi cloner mon projet. Dans les 2 cas, une fois récupéré vous devrez lancer la commande `NPM Install` afin d'installer les dépendances nécessaires à l'application, elles sont listées dans le fichier [package.json](https://github.com/Parad0xJ/todolistmvc/blob/master/package.json "Voir le fichier des dépendances").
