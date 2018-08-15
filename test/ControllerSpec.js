@@ -176,6 +176,15 @@ describe('controller', function () {
 
 	it('should highlight "All" filter by default', function () {
 		// TODO: write test
+		var todoTest = {
+			id: '123',
+			title: 'myTodo',
+			completed: true
+		};
+		setUpModel([todoTest]);
+		subject.setView('');
+
+		expect(view.render).toHaveBeenCalledWith('setFilter', '');
 	});
 
 	it('should highlight "Active" filter when switching to active view', function () {
