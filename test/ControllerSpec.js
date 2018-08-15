@@ -189,6 +189,20 @@ describe('controller', function () {
 
 	it('should highlight "Active" filter when switching to active view', function () {
 		// TODO: write test
+		var todoTest = [{
+				id: '123',
+				title: 'myTodo',
+				completed: false
+			},
+			{
+				id: '456',
+				title: 'myTodo2',
+				completed: true
+			}
+		]
+		setUpModel([todoTest]);
+		subject.setView('#/active');
+		expect(view.render).toHaveBeenCalledWith('setFilter', 'active');
 	});
 
 	describe('toggle all', function () {
