@@ -97,6 +97,15 @@ describe('controller', function () {
 
 		it('should show active entries', function () {
 			// TODO: write test
+			var todoTest = {
+				id: '123',
+				title: 'myTodo',
+				completed: false
+			};
+			setUpModel([todoTest]);
+			subject.setView('#/active');
+
+			expect(view.render).toHaveBeenCalledWith('showEntries', [todoTest]);
 		});
 
 		it('should show completed entries', function () {
