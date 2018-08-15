@@ -267,6 +267,12 @@ describe('controller', function () {
 	describe('new todo', function () {
 		it('should add a new todo to the model', function () {
 			// TODO: write test
+			setUpModel([]);
+			subject.setView('');
+
+			view.trigger('newTodo', 'myNewTodo');
+
+			expect(model.create).toHaveBeenCalledWith('myNewTodo', jasmine.any(Function));
 		});
 
 		it('should add a new todo to the view', function () {
