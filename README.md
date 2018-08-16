@@ -18,7 +18,7 @@
 
 #### Etape 4
 
-* Ecrire la documentation technique de l'application todolist mvc.
+* Ecrire la documentation technique de l'application todolist.
     - Documenter l'application (usage non technique).
     - Comment elle fonctionne techniquement.
     - Audit.
