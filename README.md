@@ -18,11 +18,19 @@
 
 #### Etape 4
 
+<<<<<<< HEAD
 - Ecrire la documentation technique de l'application todolist mvc.
   - Documenter l'application (usage non technique).
   - Comment elle fonctionne techniquement.
   - Audit.
 
+=======
+* Ecrire la documentation technique de l'application todolist.
+    - Documenter l'application (usage non technique).
+    - Comment elle fonctionne techniquement.
+    - Audit.
+    
+>>>>>>> dd6a595556736f8517ccd225c56769c9ca525b11
 **Voir le [Wiki](https://github.com/Parad0xJ/ProjetVIII/wiki)**
 
 ---
